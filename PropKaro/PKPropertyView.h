@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PKProperties.h"
 @interface PKPropertyView : UIView
+@property (nonatomic, strong) PKPropertyItem * propertyItem;
+- (void)updateView;
++ (CGFloat)heightForCellForProperty:(PKPropertyItem *)property;
 
 @end

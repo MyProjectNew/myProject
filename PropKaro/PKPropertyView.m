@@ -16,6 +16,10 @@
 - (void)drawRect:(CGRect)rect {
     // Drawing code
 }
+ 
 */
-
++ (CGFloat)heightForCellForProperty:(PKPropertyItem *)property
+{
+    return 0;
+}
 @end

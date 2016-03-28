@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		43D99855D17B961C13DE55C1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1C51E0B447D66B230463CC /* libPods.a */; };
+		5310F92C1CA7F70D009F48F3 /* WebServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310F92B1CA7F70D009F48F3 /* WebServiceManager.m */; };
+		5310F92F1CA7F717009F48F3 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310F92E1CA7F717009F48F3 /* DataManager.m */; };
+		5310F9321CA7FAAD009F48F3 /* PKProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310F9311CA7FAAD009F48F3 /* PKProperties.m */; };
+		5310F9351CA810DC009F48F3 /* PKPropertyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310F9341CA810DC009F48F3 /* PKPropertyCell.m */; };
+		5310F9381CA81101009F48F3 /* PKPropertyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310F9371CA81101009F48F3 /* PKPropertyView.m */; };
 		ACD9FF971C9B0BFD002897C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD9FF961C9B0BFD002897C1 /* main.m */; };
 		ACD9FF9A1C9B0BFD002897C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD9FF991C9B0BFD002897C1 /* AppDelegate.m */; };
 		ACD9FF9D1C9B0BFD002897C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD9FF9C1C9B0BFD002897C1 /* ViewController.m */; };
@@ -17,6 +22,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5310F92A1CA7F70D009F48F3 /* WebServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceManager.h; sourceTree = "<group>"; };
+		5310F92B1CA7F70D009F48F3 /* WebServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceManager.m; sourceTree = "<group>"; };
+		5310F92D1CA7F717009F48F3 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		5310F92E1CA7F717009F48F3 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		5310F9301CA7FAAD009F48F3 /* PKProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKProperties.h; sourceTree = "<group>"; };
+		5310F9311CA7FAAD009F48F3 /* PKProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKProperties.m; sourceTree = "<group>"; };
+		5310F9331CA810DC009F48F3 /* PKPropertyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKPropertyCell.h; sourceTree = "<group>"; };
+		5310F9341CA810DC009F48F3 /* PKPropertyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKPropertyCell.m; sourceTree = "<group>"; };
+		5310F9361CA81101009F48F3 /* PKPropertyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKPropertyView.h; sourceTree = "<group>"; };
+		5310F9371CA81101009F48F3 /* PKPropertyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKPropertyView.m; sourceTree = "<group>"; };
 		5880C003BD062B31DCD793D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7C1C51E0B447D66B230463CC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD9FF921C9B0BFD002897C1 /* PropKaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropKaro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +89,10 @@
 		ACD9FF941C9B0BFD002897C1 /* PropKaro */ = {
 			isa = PBXGroup;
 			children = (
+				5310F92D1CA7F717009F48F3 /* DataManager.h */,
+				5310F92E1CA7F717009F48F3 /* DataManager.m */,
+				5310F92A1CA7F70D009F48F3 /* WebServiceManager.h */,
+				5310F92B1CA7F70D009F48F3 /* WebServiceManager.m */,
 				ACD9FF981C9B0BFD002897C1 /* AppDelegate.h */,
 				ACD9FF991C9B0BFD002897C1 /* AppDelegate.m */,
 				ACD9FF9B1C9B0BFD002897C1 /* ViewController.h */,
@@ -83,6 +102,12 @@
 				ACD9FFA31C9B0BFD002897C1 /* LaunchScreen.storyboard */,
 				ACD9FFA61C9B0BFD002897C1 /* Info.plist */,
 				ACD9FF951C9B0BFD002897C1 /* Supporting Files */,
+				5310F9301CA7FAAD009F48F3 /* PKProperties.h */,
+				5310F9311CA7FAAD009F48F3 /* PKProperties.m */,
+				5310F9331CA810DC009F48F3 /* PKPropertyCell.h */,
+				5310F9341CA810DC009F48F3 /* PKPropertyCell.m */,
+				5310F9361CA81101009F48F3 /* PKPropertyView.h */,
+				5310F9371CA81101009F48F3 /* PKPropertyView.m */,
 			);
 			path = PropKaro;
 			sourceTree = "<group>";
@@ -114,7 +139,6 @@
 				ACD9FF8E1C9B0BFD002897C1 /* Sources */,
 				ACD9FF8F1C9B0BFD002897C1 /* Frameworks */,
 				ACD9FF901C9B0BFD002897C1 /* Resources */,
-				BE5E762CCE7E690D96495394 /* Embed Pods Frameworks */,
 				57A3884F648D5BED6245C4A3 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -202,21 +226,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		BE5E762CCE7E690D96495394 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -224,9 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5310F9351CA810DC009F48F3 /* PKPropertyCell.m in Sources */,
+				5310F92C1CA7F70D009F48F3 /* WebServiceManager.m in Sources */,
+				5310F92F1CA7F717009F48F3 /* DataManager.m in Sources */,
 				ACD9FF9D1C9B0BFD002897C1 /* ViewController.m in Sources */,
 				ACD9FF9A1C9B0BFD002897C1 /* AppDelegate.m in Sources */,
 				ACD9FF971C9B0BFD002897C1 /* main.m in Sources */,
+				5310F9381CA81101009F48F3 /* PKPropertyView.m in Sources */,
+				5310F9321CA7FAAD009F48F3 /* PKProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

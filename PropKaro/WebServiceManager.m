@@ -11,8 +11,6 @@
 #import "AFHTTPRequestOperation.h"
 #import "AFHTTPRequestOperationManager.h"
 #import "AFNetworkReachabilityManager.h"
-#import "WebEngineConstants.h"
-#import "GLUtility.h"
 
 #define IS_OS_8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 
@@ -30,7 +28,7 @@
     static dispatch_once_t onceToken;
     static WebServiceManager *sharedManager = nil;
     dispatch_once(&onceToken, ^{
-        sharedManager = [[self alloc] initWithBaseURL:[NSURL URLWithString:BASE_URL]];
+        sharedManager = [[self alloc] initWithBaseURL:[NSURL URLWithString:@""]];
         
     });
     return sharedManager;
@@ -77,7 +75,7 @@
                                       @catch (NSException *e)
                                       {
                                           if (completionBlock) {
-                                              completionBlock(nil, [GLUtility getExceptionError]);
+                                              completionBlock(nil, [WebServiceManager getExceptionError]);
                                           }
                                       }
                                       [self removeTask:task];
@@ -117,7 +115,7 @@
                                       @catch (NSException *e)
                                       {
                                           if (completionBlock) {
-                                              completionBlock(nil, [GLUtility getExceptionError]);
+                                              completionBlock(nil, [WebServiceManager getExceptionError]);
                                           }
                                       }
                                       
@@ -167,7 +165,7 @@
                                       @catch (NSException *e)
                                       {
                                           if (completionBlock) {
-                                              completionBlock(nil, [GLUtility getExceptionError]);
+                                              completionBlock(nil, [WebServiceManager getExceptionError]);
                                           }
                                       }
                                       
@@ -208,6 +206,14 @@
     }
     
     [self.allTasks removeAllObjects];
+}
+
++ (NSError *)getExceptionError
+{
+    NSMutableDictionary* details = [NSMutableDictionary dictionary];
+    [details setValue:@"" forKey:NSLocalizedDescriptionKey];
+    NSError *error = [NSError errorWithDomain:@"gp" code:200 userInfo:details];
+    return error;
 }
 
 @end
